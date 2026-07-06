@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一个支持 Markdown 和 Typst 的静态博客">
+  <meta name="author" content="作者名">
+  <title>加密文章示例</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="alternate" type="application/rss+xml" title="我的博客" href="/rss.xml">
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="/" class="navbar-brand">我的博客</a>
+    <div class="navbar-links">
+      <a href="/" class="navbar-link">首页</a>
+      <a href="/archive.html" class="navbar-link">归档</a>
+      <a href="/tags/" class="navbar-link">标签</a>
+    </div>
+  </div>
+</nav>
+
+  <main class="main-content">
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <span class="post-date">2026-07-04</span>
+      <span class="post-category-pill">Uncategorized</span>
+    </div>
+
+    <h1 class="post-title"><em>加密文章示例</em></h1>
+
+    <div class="post-tags">
+      <a href="/tags/加密.html" class="post-tag">加密</a>
+      <a href="/tags/隐私.html" class="post-tag">隐私</a>
+    </div>
+
+  </header>
+
+  <div class="post-content ">
+    <div class="encrypted-wrapper" id="encrypted-content">
+  <div class="encrypted-prompt">
+    <div class="encrypted-icon">🔒</div>
+    <h2>这篇文章已加密</h2>
+    <p class="encrypted-description">请输入密码以查看内容</p>
+    <div class="encrypted-form">
+      <input
+        type="password"
+        id="password-input"
+        class="encrypted-input"
+        placeholder="输入密码"
+        autocomplete="off"
+      />
+      <button class="pill-button" onclick="decryptContent()">解锁</button>
+    </div>
+    <div id="decrypt-error" class="encrypted-error" style="display: none;"></div>
+  </div>
+  <script type="application/json" id="encrypted-data">{"salt":"KIQkS6uI8YfGTMUXCG7lwA==","iv":"M/a6BBw62bUCCVK8","encrypted":"6MHcO6OU037t0ekEEnbtTKLsjHBiVSRiNkIgJk91rAE/R9hEXReSCppcaNN5z15oYo7Fjbsu/Q7/hCt+/QCIJKtAT3ZlLBC1rWqCZQZ764VZK3ZthBpOXVvrUuKrhQOCLqxEJhGrlyVnwvaitM71mUMleU4r8MWrjtSyXGoE1N3xoigv0MZ5LZniJj8jKBW2RYg+Y/AtbAJKBJt4q+8ZlcI4785eZOb8ybdZYJS3wUo4U0EBZe1html2wEhSGnyN3fmAzkYJG2+ILQK1T7OlbWQPA2RdIAlJVxZCWoYjg3zipQ72SwtdmVlMBYo2iD/c6rcNbx3G/2ybogoPcEQYEHVEn+zdinxs6MY1hN6YmwzlM3SuubMyuqAwlUM/oBZt17UeKnPB8BYuY5gJ2ocOBVrdwaoEe4z4Bak26YB1PF6pa8AJmm13vRIYC99CP5A=","tag":"Ddic8MwnpHcHvNPwEyF59Q==","iterations":100000}</script>
+</div>
+  </div>
+
+  <footer class="post-footer">
+    <div class="post-author">
+      <span>作者：作者名</span>
+    </div>
+    <div class="post-nav">
+      <a href="/" class="pill-button">← 返回首页</a>
+    </div>
+  </footer>
+</article>
+  </main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-text">
+      © 作者名 ·
+      由 <a href="https://github.com" target="_blank" rel="noopener">Typst-Markdown Blog</a> 强力驱动
+    </p>
+    <p class="footer-links">
+      <a href="/rss.xml" class="footer-link">RSS</a>
+      <a href="/sitemap.xml" class="footer-link">Sitemap</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="/scripts/decrypt.js"></script>
+</body>
+</html>

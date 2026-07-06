@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>我的博客</title>
+    <link>https://ntt998244353.github.io/</link>
+    <description>一个支持 Markdown 和 Typst 的静态博客</description>
+    <language>zh-CN</language>
+    <item>
+      <title>欢迎来到我的博客</title>
+      <link>https://ntt998244353.github.io/posts/welcome.html</link>
+      <description>欢迎！
+这是你的第一篇博客文章。使用 Markdown 编写，简单而强大。
+特性
+
+支持 Markdown 和 Typst
+漂亮的设计系统
+文章加密保护
+一键部署到 GitHub Pages
+
+代码示例
+function hello() {
+  console.log(&amp;#039;Hello, World!&amp;#039;);
+}
+
+开始写作吧！
+...</description>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <guid>https://ntt998244353.github.io/posts/welcome.html</guid>
+    </item>
+    <item>
+      <title>加密文章示例</title>
+      <link>https://ntt998244353.github.io/posts/encrypted-example.html</link>
+      <description>这是一篇加密文章
+只有输入正确密码才能查看内容。
+密码是：secret123
+...</description>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+      <guid>https://ntt998244353.github.io/posts/encrypted-example.html</guid>
+    </item>
+    <item>
+      <title>Typst 排版示例</title>
+      <link>https://ntt998244353.github.io/posts/typst-example.html</link>
+      <description>...</description>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+      <guid>https://ntt998244353.github.io/posts/typst-example.html</guid>
+    </item>
+  </channel>
+</rss>
